@@ -37,12 +37,13 @@ const app = Vue.createApp({
 
             addTask(){
                 this.tasks.push({task: this.newTask,
-                                 done: true   });
+                                 done: false   });
                 
             },
 
-            addLine(){
-                this.tasks.done === true;
+            addLine(index){
+                this.tasks.done = true;
+              
             }
            
         }});

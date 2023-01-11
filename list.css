@@ -21,3 +21,7 @@ li{
 .overline{
     text-decoration: line-through;
 }
+
+p{
+    cursor: pointer;
+}
