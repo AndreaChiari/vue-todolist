@@ -1,0 +1,23 @@
+li,input{
+    width: 500px;
+}
+
+h1{
+    color: darkblue;
+    text-align: center;
+}
+
+li{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    padding: 2px;
+}
+
+.fa-x{
+    cursor: pointer;
+}
+
+.overline{
+    text-decoration: line-through;
+}

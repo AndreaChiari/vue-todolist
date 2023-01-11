@@ -13,6 +13,22 @@
     <title>tobolist</title>
 </head>
 <body>
-    
+    <main>
+        <div id="root">
+            <h1>To Do List</h1>
+            <div class="d-flex justify-content-center mt-5">
+                <input type="text" class="me-2" v-model="newTask" placeholder="Add New task">
+                <button class="btn btn-success" @click="addTask">Aggiungi</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <ul class="mt-5 mx-auto">
+                    <li class="d-flex justify-content-between align-items-center" v-for="(task,i) in tasks" v-bind:class="overline">
+                        <p @click="addLine" :class="done === true ? 'overline' : '' ">{{ task.task }}</p>
+                        <i class="fa-solid fa-x" @click="removeTask(i)"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
