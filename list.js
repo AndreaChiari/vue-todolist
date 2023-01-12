@@ -6,7 +6,7 @@ const app = Vue.createApp({
             newTask: '',
             tasks :[
                 {task:'fare la spesa',
-                 done: false
+                 done: true
                 },
             
                 {task:'aggiornare il computer',
@@ -22,7 +22,7 @@ const app = Vue.createApp({
                 },
             
                 {task:'riparare il mouse',
-                 done: false
+                 done: true
                 },
             ],
             
@@ -42,7 +42,7 @@ const app = Vue.createApp({
             },
 
             addLine(index){
-                this.tasks.done = true;
+                this.tasks[index].done = !this.tasks[index].done;
               
             }
            
